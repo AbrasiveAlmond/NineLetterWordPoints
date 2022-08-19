@@ -1,0 +1,1 @@
+console.log("You are currenly on the correct nine letter word website")

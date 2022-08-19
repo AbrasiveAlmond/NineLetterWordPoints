@@ -3,11 +3,17 @@
   "description": "A simple extension to add points to NineLetterWord.tompaton.com (Not assoiated in any way) Made by: Logan & Quinn",
   "version": "0.01",
   "manifest_version": 3,
-    "background": {
+  "background": {
     "service_worker": "background.js"
   },
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
-  "default_popup": "popup.html"
-  }
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://nineletterword.tompaton.com/*"],
+      "js": ["checksite.js"]
+    }
+  ]
 }
