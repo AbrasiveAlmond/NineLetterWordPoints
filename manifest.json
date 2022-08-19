@@ -15,5 +15,9 @@
       "matches": ["https://nineletterword.tompaton.com/*"],
       "js": ["checksite.js"]
     }
-  ]
+  ],
+  "web_accessible_resources": [{
+  "resources": ["script.js"],
+  "matches": ["https://nineletterword.tompaton.com/*"]
+  }]
 }
