@@ -10,6 +10,7 @@ The limitations of this are that the words have to be "Common", Only use each gi
  - Get length of a word via JavaScript
  - Add a Javascipt array for calculating points from a length value
  - Piggyback off of the "Guess" button to run function
+   - This will involve injecting an extra function on the Guess button (id="move_button")
  - Turn into a Chrome Extension
  - Refactor Names of most files
 
