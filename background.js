@@ -1,4 +1,4 @@
-// background.js
+//  Runs in the background on extention start 
 
 let color = '#3aa757';
 

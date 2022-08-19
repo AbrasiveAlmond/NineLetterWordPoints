@@ -1,8 +1,24 @@
 html{
 	width: 300px;
-	height: 150px;
+	height: auto;
+	background: #121212;
+	color: #dedede;
+	column-gap: 50px;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
+    text-align: center;
+}
+
+a, a:visited{
+	color: #3299a8;
 }
 
 table{
-	border: 3px solid #000;
+	border: 3px solid #dedede;
+}
+
+.points{
+}
+
+.link{
 }
