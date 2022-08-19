@@ -3,10 +3,8 @@ html{
 	height: auto;
 	background: #121212;
 	color: #dedede;
-	column-gap: 50px;
-	grid-template-columns: 1fr 1fr;
-	align-content: center;
     text-align: center;
+	margin: 20px;
 }
 
 a, a:visited{
@@ -14,11 +12,7 @@ a, a:visited{
 }
 
 table{
-	border: 3px solid #dedede;
+	margin-left: auto;
+    margin-right: auto;
 }
 
-.points{
-}
-
-.link{
-}
