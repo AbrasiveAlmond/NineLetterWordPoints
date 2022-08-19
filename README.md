@@ -11,6 +11,7 @@ The limitations of this are that the words have to be "Common", Only use each gi
  - Add a Javascipt array for calculating points from a length value
  - Piggyback off of the "Guess" button to run function
  - Turn into a Chrome Extension
+ - Refactor Names of most files
 
 
 ## Installation
