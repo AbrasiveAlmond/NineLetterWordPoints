@@ -13,7 +13,8 @@
   "content_scripts": [
     {
       "matches": ["https://nineletterword.tompaton.com/*"],
-      "js": ["checksite.js"]
+      "js": ["checksite.js"],
+      "run_at": "document_idle"
     }
   ],
   "web_accessible_resources": [{
