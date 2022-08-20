@@ -9,6 +9,7 @@ The limitations of this are that the words have to be "Common", Only use each gi
  - ~~Get word from html element & Turn it into a JavaScript list~~
  - ~~Get length of a word via JavaScript~~
  - ~~Add a Javascipt array for calculating points from a length value~~
+ - Stylise website (Nothing crazy - It's almost plain html atm)
  - Try updating points every new guess
   - This will involve injecting an extra function on the Guess button (id="move_button")
  - Confetti animation when a certain point threshold is beaten
