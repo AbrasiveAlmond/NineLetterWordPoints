@@ -1,4 +1,4 @@
-console.log("You are currenly on the correct nine letter word website")
+console.log("You are currenly on the correct nine letter word website");
 var s = document.createElement('script');
 s.src = chrome.runtime.getURL('script.js');
 s.onload = function() {
