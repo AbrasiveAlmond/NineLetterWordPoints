@@ -9,9 +9,9 @@ The limitations of this are that the words have to be "Common", Only use each gi
  - Refactor Names of most files
  - Stylise website (Nothing crazy - It's almost plain html atm)
  - Try updating points every new guess
-  - This will involve injecting an extra function on the Guess button (id="move_button")
+   - This will involve injecting an extra function on the Guess button (id="move_button")
  - Confetti animation when a certain point threshold is beaten
-  - Remeber high scores
+   - Remeber high scores
  - ~~Turn into a Chrome Extension~~
  - ~~Get word from html element & Turn it into a JavaScript list~~
  - ~~Get length of a word via JavaScript~~
