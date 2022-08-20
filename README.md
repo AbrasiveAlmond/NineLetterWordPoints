@@ -6,16 +6,17 @@ Nineletterword.tompation is a website designed to test your ability to find word
 The limitations of this are that the words have to be "Common", Only use each given letter once, and have a length of 4-9 charecters
 
 ## Todo:
- - ~~Get word from html element & Turn it into a JavaScript list~~
- - ~~Get length of a word via JavaScript~~
- - ~~Add a Javascipt array for calculating points from a length value~~
+ - Refactor Names of most files
  - Stylise website (Nothing crazy - It's almost plain html atm)
  - Try updating points every new guess
   - This will involve injecting an extra function on the Guess button (id="move_button")
  - Confetti animation when a certain point threshold is beaten
   - Remeber high scores
  - ~~Turn into a Chrome Extension~~
- - Refactor Names of most files
+ - ~~Get word from html element & Turn it into a JavaScript list~~
+ - ~~Get length of a word via JavaScript~~
+ - ~~Add a Javascipt array for calculating points from a length value~~
+
 
 
 ## Installation
