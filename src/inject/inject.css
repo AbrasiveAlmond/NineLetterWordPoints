@@ -7,14 +7,33 @@
   margin-bottom: 9px;
   text-align: center;
 }
+.button, #new-game, #reveal{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.2em solid #ebebeb;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#414141;
+  text-align:center;
+  transition: all 0.2s;
+  background-color:#f0f0f0;
+}
+button:hover, #new-game:hover, #reveal:hover{
+  color:#000000;
+  background-color:#ebebeb;
+}
 
 #score {
   font-weight: bold;
   font-size: 1.2em;
   width: 12em;
 }
-
-/* CSS */
+/* Alternate CSS Styling for buttons */
+/* CSS
 #new-game, #reveal, .button {
   align-items: center;
   appearance: none;
@@ -57,4 +76,4 @@
 #new-game:active, #reveal:active, .button:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
-}
+} */
