@@ -14,10 +14,6 @@
     "scripts": [
       "src/bg/background.js"
     ],
-    "permissions": ["storage", "activeTab", "scripting"],
-    "action": {
-    "default_popup": "popup.html"
-    },
     "persistent": true
   },
   "page_action": {
