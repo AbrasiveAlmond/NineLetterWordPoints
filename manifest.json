@@ -23,8 +23,7 @@
   },
   "permissions": [
     "tabs",
-    "https://nineletterword.tompaton.com/*",
-    "chrome://new-tab-page"
+    "*"
   ],
   "content_scripts": [
     {
