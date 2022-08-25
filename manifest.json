@@ -24,7 +24,7 @@
   "permissions": [
     "tabs",
     "https://nineletterword.tompaton.com/*",
-    "chrome://newtab"
+    "chrome://new-tab-page"
   ],
   "content_scripts": [
     {
