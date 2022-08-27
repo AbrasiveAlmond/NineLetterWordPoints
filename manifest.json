@@ -1,5 +1,5 @@
 {
-  "name": "Nine Letter Word Tally",
+  "name": "Nine Letter Word Github",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "No more counting on your fingers – Adds a button to tally your points on Nine Letter Words website game",
@@ -12,7 +12,7 @@
   },
   "page_action": {
     "default_icon": "icons/icon48.png",
-    "default_title": "page action demo",
+    "default_title": "Nine Letter Words",
     "default_popup": "src/page_action/page_action.html"
   },
   "permissions": [

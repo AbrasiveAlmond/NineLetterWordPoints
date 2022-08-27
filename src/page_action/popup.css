@@ -1,0 +1,62 @@
+html{
+	width: 300px;
+	height: 320px;
+	background: #f8f8f8;
+	color: #444444;
+    text-align: left;
+	margin: 20px;
+}
+
+.gridarea {
+	display: grid;
+	grid-template-areas:
+					"head head"
+					"table links"
+					"foot foot";
+	grid-template-rows: 100x 1fr 30px;
+	grid-template-columns: 50%;
+}
+
+.header {
+	grid-area: head;
+}
+
+.points {
+	grid-area: table;
+	margin: 10px;
+}
+.points::after {
+	content: "";
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    height: 145px;
+    width: 2px;
+    background: grey;
+}
+
+.weblinks {
+	grid-area: links;
+	margin: 10px;
+}
+
+footer {
+	text-align: center;
+	grid-area: foot;
+}
+
+a, a:visited{
+	color: #3299a8;
+}
+
+table{
+	margin-left: 3%;
+}
+
+tr td {
+	padding-left: 5px;
+}
+
+h1 {
+	margin-left: 3%;
+}
