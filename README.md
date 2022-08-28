@@ -13,7 +13,7 @@ The limitations of this are that the words have to be "Common", Only use each gi
  - Link extension to dev account
  - Think of name for extension and dev account
  - Refactor names of most files
- - ~~Fix or delete old popup.html file - Its not needed
+ - ~~Fix or delete old popup.html file - Its not needed~~
  - Stylise website (Nothing crazy - It's almost plain html atm)
  - Try updating points every new guess
    - This will involve injecting an extra function on the Guess button (id="move_button")
