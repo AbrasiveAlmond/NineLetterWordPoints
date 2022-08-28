@@ -10,31 +10,23 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "page_action": {
+  "browser_action": {
     "default_icon": "icons/icon48.png",
     "default_title": "Nine Letter Words",
     "default_popup": "src/page_action/page_action.html"
   },
   "permissions": [
     "tabs",
-    "*"
+    "https://nineletterword.tompaton.com/*"
   ],
   "content_scripts": [
     {
-      "matches": [
-        "https://nineletterword.tompaton.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://nineletterword.tompaton.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
+      "matches":
+      ["https://nineletterword.tompaton.com/*"],
+      "css":
+      ["src/inject/inject.css"],
+      "js":
+      ["src/inject/inject.js"]
     }
   ]
 }
