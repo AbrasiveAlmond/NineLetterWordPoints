@@ -6,24 +6,24 @@ chrome.extension.sendMessage({}, function(response) {
 		// ---------------------------------------------------------- //
 		// This part of the script triggers when page is done loading //
 
-		// Creates the button
-		var button = document.createElement("button");
-		// Creates the text
-   		var text = document.createTextNode("Tally Points");
-		button.appendChild(text);
-		// Finds an existing element and appends it
-		var element = document.getElementById("result");
-		element.after(button);
-		// Adds id for css
-		button.setAttribute("id", "button");
-		button.setAttribute("class", "button");
-		button.setAttribute("role", "button");
+		// // Creates the button
+		// var button = document.createElement("button");
+		// // Creates the text
+   		// var text = document.createTextNode("Tally Points");
+		// button.appendChild(text);
+		// // Finds an existing element and appends it
+		// var element = document.getElementById("result");
+		// element.after(button);
+		// // Adds id for css
+		// button.setAttribute("id", "button");
+		// button.setAttribute("class", "button");
+		// button.setAttribute("role", "button");
 
 		var points_div = document.createElement("p");
 		var points_text = document.createTextNode("0 Points");
 		points_div.appendChild(points_text)
-		var element = document.getElementById("button");
-		element.after(points_div);
+		var element = document.getElementById("result");
+		element.before(points_div);
 		points_div.setAttribute("id", "score")
 
 		// Add javascript function to input field on keypress
@@ -50,11 +50,25 @@ chrome.extension.sendMessage({}, function(response) {
 			  if (word.length >= 4 && word.length < 9) {
 				total_points += word.length-3
 			  } else { total_points += 10}};
-			document.getElementById("score").innerHTML = total_points+" Points"
+			// 1 point and n points
+			if (total_points == 1) {document.getElementById("score").innerHTML = total_points+" Point"}
+			else {document.getElementById("score").innerHTML = total_points+" Points"}
+			
 		}
 		
+		// Colour score baseed off distance from highscore
+		function calcHueShift() {
+			// Personal Highscore
+			highScore = 10
+			OldRange = highScore
+			NewRange = 120
 
-		// ----------------------------------------------------------
+			// Calculate where value lies between 0 and 120
+			// variable is used to hue shift in css
+			HueShift = (((OldValue) * NewRange) / OldRange)
+
+		}
+		// ---------------------------------------------------------- //
 
 	}
 	}, 10);
