@@ -6,8 +6,14 @@ Nineletterword.tompation is a website designed to test your ability to find word
 The limitations of this are that the words have to be "Common", Only use each given letter once, and have a length of 4-9 charecters
 
 ## Todo:
- - Refactor Names of most files
- - Fix ~~or delete~~ old popup.html file - Its ~~not~~ needed
+ - Make a consistent colour theme on website and popup
+   - White / gray with green accent
+ - Remove unnessary folders and files
+ - Make new logo
+ - Link extension to dev account
+ - Think of name for extension and dev account
+ - Refactor names of most files
+ - ~~Fix or delete old popup.html file - Its not needed~~
  - Stylise website (Nothing crazy - It's almost plain html atm)
  - Try updating points every new guess
    - This will involve injecting an extra function on the Guess button (id="move_button")
