@@ -3,9 +3,8 @@ chrome.extension.sendMessage({}, function(response) {
 	if (document.readyState === "complete") {
 		clearInterval(readyStateCheckInterval);
 
-		// ----------------------------------------------------------
-		// This part of the script triggers when page is done loading
-		console.log("Hello. This message was sent from scripts/inject.js");
+		// ---------------------------------------------------------- //
+		// This part of the script triggers when page is done loading //
 
 		// Creates the button
 		var button = document.createElement("button");
@@ -27,8 +26,12 @@ chrome.extension.sendMessage({}, function(response) {
 		element.after(points_div);
 		points_div.setAttribute("id", "score")
 
+		// Add javascript function to input field on keypress
+		var guess_field = document.getElementById("guess");
+		// guess_field.setAttribute("onkeyup", "calcTotalPoints")
 
-		button.onclick = function calcTotalPoints() {
+		// button.onclick = function calcTotalPoints()
+		guess_field.onkeyup = function calcTotalPoints() {
 			// Creates a pointer to the correct guesses on the website, 
 			// this could be combined with the next line into one statement
 			const right_guesses = document.getElementById('right_guesses');
@@ -48,7 +51,7 @@ chrome.extension.sendMessage({}, function(response) {
 				total_points += word.length-3
 			  } else { total_points += 10}};
 			document.getElementById("score").innerHTML = total_points+" Points"
-		  }
+		}
 		
 
 		// ----------------------------------------------------------
