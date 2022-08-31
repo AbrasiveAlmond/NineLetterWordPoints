@@ -41,17 +41,6 @@ body {
 	margin: 10px;
 }
 
-/* Was a vertical line */
-/* .points::after {
-	content: "";
-    position: absolute;
-    left: 50%;
-    top: 100px;
-    height: 145px;
-    width: 2px;
-    background: grey;
-} */
-
 .weblinks {
 	grid-area: links;
 	margin: 10px;
