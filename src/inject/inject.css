@@ -28,10 +28,27 @@
 button:hover, #new-game:hover, #reveal:hover, #clear_button:hover, #move_button:hover{
   color:#000000;
   background-color:#ebebeb;
+  border:0.2em solid #dfdfdf;
 }
 
 #score {
   font-weight: bold;
   font-size: 1.2em;
   width: 12em;
+  /* deg of rotation is changed dynamically in javascript */
+  color: hsl(0deg 80% 70%);
+}
+
+#puzzle td {
+  border: 1px solid black;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  text-transform: uppercase;
+  padding: 0em;
+  box-shadow:  2px 2px 2px 0px rgba(0, 0, 0, .2);
+  background-color: white;
+  background: linear-gradient(to bottom, #ffffff 50%,#f0f0f0 100%);
 }
