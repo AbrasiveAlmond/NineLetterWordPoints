@@ -1,7 +1,7 @@
 {
   "name": "Nine Letter Word Github",
   "version": "0.0.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "No more counting on your fingers – Adds a button to tally your points on Nine Letter Words website game",
   "homepage_url": "https://github.com/AbrasiveAlmond/NineLetterWordPoints",
   "default_locale": "en",
@@ -10,23 +10,24 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "browser_action": {
+  "action": {
     "default_icon": "icons/icon48.png",
     "default_title": "Nine Letter Words",
     "default_popup": "src/page_action/page_action.html"
   },
   "permissions": [
-    "tabs",
+    "tabs"
+  ],
+  "host_permissions": [
     "https://nineletterword.tompaton.com/*"
   ],
+
   "content_scripts": [
     {
-      "matches":
-      ["https://nineletterword.tompaton.com/*"],
-      "css":
-      ["src/inject/inject.css"],
-      "js":
-      ["src/inject/inject.js"]
+      "matches": ["https://nineletterword.tompaton.com/*"],
+      "css": ["src/inject/inject.css"],
+      "js": ["src/inject/inject.js"]
     }
   ]
+
 }
