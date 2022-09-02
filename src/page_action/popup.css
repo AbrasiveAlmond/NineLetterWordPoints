@@ -18,7 +18,8 @@ body {
 	grid-template-areas:
 					"head"
 					"links"
-					"table";
+					"table"
+					"foot";
 	/* grid-template-rows: 100x 1fr 30px; */
 	grid-template-columns: 100%;
 }
@@ -26,7 +27,7 @@ body {
 .header {
 	grid-area: head;
 	display: flex;
-	border-bottom:#3299a8 3px double;
+	border-bottom:#3299a8 4px double;
 }
 
 .logo {
@@ -45,10 +46,12 @@ body {
 	margin: 10px;
 }
 
-/* footer {
+footer {
 	text-align: center;
 	grid-area: foot;
-} */
+	border-top:#3299a8 1px solid;
+	border-bottom:#3299a8 1px solid;
+}
 
 a:hover, a:visited:hover {
 	color:#3299a8;
