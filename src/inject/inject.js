@@ -48,23 +48,24 @@ function checkCookie() {
 // set highscore cookie the first time extension is activated
 // console.log(getCookie("highScore"))
 if (getCookie("highScore") == "") {setCookie("highScore", 10, 3000)}
-
+prevHighScore = parseInt(getCookie("highScore"))
 // console.log(document.cookie)
 
 
-// Creates script needed for confetti
-var confettiScriptSource = document.createElement("script")
-confettiScriptSource.setAttribute('src','https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js')
-var element = document.getElementById("game");
-element.before(confettiScriptSource)
+// // Creates script needed for confetti
+// var confettiSource = document.createElement("script")
+// confettiSource.setAttribute('src','confetti.js')
+// var element = document.getElementById("game");
+// element.before(confettiSource)
 
-var confettiScriptRun = document.createElement("script")
-// confettiScriptRun.setAttribute("type", "module")
-// confettiScriptCode = document.createTextNode("import {confetti} from 'chrome-extension://igbfdkfinjjmdnmcdkhgkffplkpglpno/src/inject/inject.js'; confetti;")
-confettiScriptCode = document.createTextNode("confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });")
-confettiScriptRun.appendChild(confettiScriptCode)
-var element = document.getElementById("game");
-element.before(confettiScriptRun)
+// var confettiRun = document.createElement("script")
+// // confettiScriptRun.setAttribute("type", "module")
+// // confettiScriptCode = document.createTextNode("import {confetti} from 'chrome-extension://igbfdkfinjjmdnmcdkhgkffplkpglpno/src/inject/inject.js'; confetti;")
+// confettiCode = document.createTextNode("const start = () => {setTimeout(function() {confetti.start()}, 1000); }; const stop = () => {setTimeout(function() {confetti.stop()}, 5000);}; start(); stop();")
+// confettiRun.appendChild(confettiCode)
+// var element = document.getElementById("game");
+// element.before(confettiRun)
+
 
 // Creates The Points Counter
 var pointsDiv = document.createElement("p");
@@ -75,6 +76,10 @@ element.before(pointsDiv);
 pointsDiv.setAttribute("id", "score")
 pointsDiv.setAttribute("class", "score")
 
+
+// variable that needs to be declared only once at page load
+// It is used to only run the confetti code once per game
+let hasRun = 0
 
 // Append javascript function to guessfield
 // **Calculates points on every key press
@@ -112,8 +117,10 @@ guessField.onkeyup = function calcTotalPoints() {
 	hueShift = Math.min(120, hueShift)
 	pointsDiv.style.color = `hsl(${hueShift}deg 80% 70%)`
 	// console.log(getCookie("highScore"), typeof(getCookie("highScore")))
-	if (totalPoints > parseInt(getCookie("highScore"))) {
+	if (totalPoints > prevHighScore) {
 		console.log("New Highscore")
-	}
-}
+		setCookie("highScore", totalPoints, 3000)
+		if (hasRun == 0) {console.log("confetti code"); hasRun = 1}
+	}	
+};
 // -----------------------END----------------------------- //

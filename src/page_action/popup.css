@@ -18,8 +18,7 @@ body {
 	grid-template-areas:
 					"head"
 					"links"
-					"table"
-					"foot";
+					"table";
 	/* grid-template-rows: 100x 1fr 30px; */
 	grid-template-columns: 100%;
 }
@@ -46,10 +45,10 @@ body {
 	margin: 10px;
 }
 
-footer {
+/* footer {
 	text-align: center;
 	grid-area: foot;
-}
+} */
 
 a:hover, a:visited:hover {
 	color:#3299a8;
