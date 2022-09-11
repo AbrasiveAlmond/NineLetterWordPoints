@@ -1,5 +1,6 @@
 # NineLetterWordPoints
 A chrome extension to calculate points for https://nineletterword.tompaton.com/
+test
 
 ## Explaination
 Nineletterword.tompation is a website designed to test your ability to find words from letters. 
