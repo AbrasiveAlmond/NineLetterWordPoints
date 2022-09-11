@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Cutive&display=swap');
 
 html{
-	width: 300px;
-	height: 320px;
+	width: 200px;
+	height: 270px;
 	background: #f8f8f8;
 	color: #444444;
-    text-align: left;
+    text-align: center;
 	margin: 0px;
 }
 
@@ -13,63 +13,39 @@ body {
 	margin: 8px;
 }
 
-.gridarea {
-	display: grid;
-	grid-template-areas:
-					"head"
-					"links"
-					"table"
-					"foot";
-	/* grid-template-rows: 100x 1fr 30px; */
-	grid-template-columns: 100%;
-}
 
 .header {
-	grid-area: head;
 	display: flex;
-	border-bottom:#3299a8 4px double;
+	/* border-bottom:#3299a8 4px double; */
 }
 
 .logo {
-	height: 40px;
-	width: 40px;
+	height: 75px;
+	width: 75px;
 	padding: 10px;
 }
 
 .points {
-	grid-area: table;
-	margin: 10px;
-}
-
-.weblinks {
-	grid-area: links;
-	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 footer {
 	text-align: center;
 	grid-area: foot;
-	border-top:#3299a8 1px solid;
-	border-bottom:#3299a8 1px solid;
+	margin-top: 5px;
+	/* border-top:#3299a8 1px solid;
+	border-bottom:#3299a8 1px solid; */
 }
 
-a:hover, a:visited:hover {
-	color:#3299a8;
+
+tr, td, table{
+	border-collapse: collapse;
+	border:2px solid #838383;
+	width: 90px;
 }
 
-a, a:visited{
-	color:#444444;
-	text-decoration: none;
-	transition-duration: 100ms;
-}
-
-table{
-	margin-left: 3%;
-}
-
-tr td {
-	padding-left: 5px;
-}
+tr:nth-child(even){background-color: #dadada;}
 
 h1 {
 	font-size: 1.8em;
@@ -81,4 +57,9 @@ h2 {
 	text-decoration: underline;
 	width: 100%;
 	font-family: 'Comfortaa', cursive;
+}
+
+hr{
+	border: 2px solid #94f190;
+	border-radius: 4px;
 }
