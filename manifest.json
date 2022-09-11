@@ -1,6 +1,6 @@
 {
   "name": "Tilly Tally",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "manifest_version": 3,
   "description": "No more counting on your fingers – Automatically tallies your points on the Nine Letter Words website game",
   "homepage_url": "https://github.com/AbrasiveAlmond/NineLetterWordPoints",

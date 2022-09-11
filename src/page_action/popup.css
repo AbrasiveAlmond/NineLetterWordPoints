@@ -13,10 +13,8 @@ body {
 	margin: 8px;
 }
 
-
 .header {
 	display: flex;
-	/* border-bottom:#3299a8 4px double; */
 }
 
 .logo {
@@ -34,8 +32,6 @@ footer {
 	text-align: center;
 	grid-area: foot;
 	margin-top: 5px;
-	/* border-top:#3299a8 1px solid;
-	border-bottom:#3299a8 1px solid; */
 }
 
 
@@ -51,12 +47,6 @@ h1 {
 	font-size: 1.8em;
 	text-align: center;
 	font-family: 'Cutive', serif;
-}
-
-h2 {
-	text-decoration: underline;
-	width: 100%;
-	font-family: 'Comfortaa', cursive;
 }
 
 hr{
