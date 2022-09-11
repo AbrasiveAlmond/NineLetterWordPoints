@@ -1,5 +1,5 @@
 {
-  "name": "Nine Letter Word",
+  "name": "Tilly Tally",
   "version": "0.2.0",
   "manifest_version": 3,
   "description": "No more counting on your fingers – Automatically tallies your points on the Nine Letter Words website game",
@@ -12,12 +12,9 @@
   },
   "action": {
     "default_icon": "icons/48x48.png",
-    "default_title": "Nine Letter Words",
+    "default_title": "Tilly Tally",
     "default_popup": "src/page_action/page_action.html"
   },
-  "permissions": [
-    "tabs"
-  ],
   "host_permissions": [
     "https://nineletterword.tompaton.com/*"
   ],
