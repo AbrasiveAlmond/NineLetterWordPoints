@@ -33,38 +33,11 @@ function getCookie(cname) {
 	return "";
 }
 
-function checkCookie() {
-	let username = getCookie("username");
-	if (username != "") {
-		alert("Welcome again " + username);
-	} else {
-		username = prompt("Please enter your name:", "");
-		if (username != "" && username != null) {
-		setCookie("username", username, 365);
-		}
-	}
-	}
-
 // set highscore cookie the first time extension is activated
 // console.log(getCookie("highScore"))
 if (getCookie("highScore") == "") {setCookie("highScore", 10, 3000)}
 prevHighScore = parseInt(getCookie("highScore"))
 // console.log(document.cookie)
-
-
-// // Creates script needed for confetti
-// var confettiSource = document.createElement("script")
-// confettiSource.setAttribute('src','confetti.js')
-// var element = document.getElementById("game");
-// element.before(confettiSource)
-
-// var confettiRun = document.createElement("script")
-// // confettiScriptRun.setAttribute("type", "module")
-// // confettiScriptCode = document.createTextNode("import {confetti} from 'chrome-extension://igbfdkfinjjmdnmcdkhgkffplkpglpno/src/inject/inject.js'; confetti;")
-// confettiCode = document.createTextNode("const start = () => {setTimeout(function() {confetti.start()}, 1000); }; const stop = () => {setTimeout(function() {confetti.stop()}, 5000);}; start(); stop();")
-// confettiRun.appendChild(confettiCode)
-// var element = document.getElementById("game");
-// element.before(confettiRun)
 
 
 // Creates The Points Counter
