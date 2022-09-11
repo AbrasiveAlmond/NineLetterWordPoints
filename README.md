@@ -9,25 +9,27 @@ The limitations of this are that the words have to be "Common", Only use each gi
  - Make a consistent colour theme on website and popup
    - White / gray with green accent
  - Remove unnessary folders and files
- - Make new logo
- - Link extension to dev account
- - Think of name for extension and dev account
+ - ~~Make new logo~~
+ - ~~Link extension to dev account~~
+ - ~~Think of name for extension and dev account~~
  - Refactor names of most files
  - ~~Fix or delete old popup.html file - Its not needed~~
  - Stylise website (Nothing crazy - It's almost plain html atm)
- - Try updating points every new guess
-   - This will involve injecting an extra function on the Guess button (id="move_button")
+ - ~~Try updating points every new guess~~
+   - ~~This will involve injecting an extra function on the Guess button (id="move_button")~~
  - Confetti animation when a certain point threshold is beaten
-   - Remeber high scores \- could use a webhost like aws with a docker container or cookies 🍪🍪🍪
+   - ~~Remeber high scores \- could use a webhost like aws with a docker container or cookies 🍪🍪🍪~~
  - ~~Turn into a Chrome Extension~~
  - ~~Get word from html element & Turn it into a JavaScript list~~
  - ~~Get length of a word via JavaScript~~
  - ~~Add a Javascipt array for calculating points from a length value~~
  
-## Install from Compiled \- Use this if possible
-1. Goto releases tab and download [NineLetterWordPoints-Completely-Redone.crx](https://github.com/AbrasiveAlmond/NineLetterWordPoints/releases/tag/BetaRelease)
-2. Run the .crx file, this will automagically add it to chrome
-
+## Install from webstore
+1. Go to [The webstore](https://chrome.google.com/webstore/detail/ggddjojlialohenbgkdnihnbggklcbjl/)
+2. Click "Add to chrome"
+3. Press "Add extension"
+4. Reload!
+ 
 ## Installation from source
 - THIS WILL NOT WORK ON A SCHOOL EMAIL; USE A PERSONAL ACCOUNT
 1. Download with either git or the green button at the top of the page.
